@@ -65,10 +65,10 @@ cmake --build build
 cmake --install build
 
 # Compile and install Airlock which is a login greeter for greetd
-git clone https://github.com/AstraSuite/Airlock.git /tmp/Airlock
-cd /tmp/Airlock
-cargo build --release
-install -Dm755 target/release/astra-airlock /usr/bin/astra-airlock
+#git clone https://github.com/AstraSuite/Airlock.git /tmp/Airlock
+#cd /tmp/Airlock
+#cargo build --release
+#install -Dm755 target/release/astra-airlock /usr/bin/astra-airlock
 
 #### Example for enabling a System Unit File
 
