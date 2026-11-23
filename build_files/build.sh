@@ -62,7 +62,7 @@ git clone https://github.com/AstraSuite/FlightDeck.git /tmp/FlightDeck
 cd /tmp/FlightDeck
 cmake -B build -S . -G Ninja -DCMAKE_BUILD_TYPE=Release
 cmake --build build
-sudo cmake --install build
+cmake --install build
 
 # Compile and install Airlock which is a login greeter for greetd
 git clone https://github.com/AstraSuite/Airlock.git /tmp/Airlock
