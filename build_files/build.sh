@@ -38,7 +38,7 @@ dnf5 install -y /tmp/proton/ProtonMailBridge.rpm
 dnf5 install -y /tmp/proton/ProtonPass.rpm
 dnf5 install -y /tmp/proton/ProtonMeet.rpm
 
-wget https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=linux&arch=x64&format=rpm -O /tmp/Discord.rpm
+wget 'https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=linux&arch=x64&format=rpm' -O /tmp/Discord.rpm
 dnf5 install -y /tmp/Discord.rpm
 
 # Cleanup
