@@ -12,6 +12,7 @@ dnf5 install -y vorta
 dnf5 install -y kubernetes-client
 dnf5 install -y helm
 dnf5 install -y wireguard-tools
+dnf5 install -y rustup
 
 # Install Proton utilities from downloaded RPMs
 wget https://proton.me/download/mail/linux/1.16.1/ProtonMail-desktop-beta.rpm -O /tmp/proton/ProtonMail.rpm
