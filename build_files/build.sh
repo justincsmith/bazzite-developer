@@ -33,6 +33,13 @@ wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-3.9.1.89198.tar.gz
 tar -xvzf /tmp/jetbrains-toolbox-3.9.1.89198.tar.gz -C /usr/share/
 ln -s /usr/share/jetbrains-toolbox-3.9.1.89198/bin/jetbrains-toolbox /usr/bin/jetbrains-toolbox
 
+# Install Google Cloud SDK
+wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-linux-x86_64.tar.gz -O /tmp/google-cloud-cli-linux-x86_64.tar.gz
+tar -xvzf /tmp/google-cloud-cli-linux-x86_64.tar.gz -C /usr/share/
+/usr/share/google-cloud-sdk/install.sh -q
+/usr/share/google-cloud-sdk/bin/gcloud components install -q gke-gcloud-auth-plugin
+ln -s /usr/share/google-cloud-sdk/bin/gcloud /usr/bin/gcloud
+
 #### Example for enabling a System Unit File
 
 # systemctl enable podman.socket
